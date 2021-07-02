@@ -1,0 +1,82 @@
+﻿'PA1_Practice.exe' (Win32): Loaded '\\filer-users\n_joanne\OpenGL\COMP371-GLDecoders-Project\Debug\PA1_Practice.exe'. Symbols loaded.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\kernel32.dll'
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\user32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\win32u.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\opengl32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcrt.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32full.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\advapi32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shell32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sechost.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cfgmgr32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rpcrt4.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sspicli.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\windows.storage.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptbase.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\combase.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcryptprimitives.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbase.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\powrprof.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shlwapi.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ddraw.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\glu32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel.appcore.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\SHCore.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\profapi.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dciman32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded '\\filer-users\n_joanne\OpenGL\COMP371-GLDecoders-Project\Debug\glew32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp140d.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbased.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcruntime140d.dll'. Cannot find or open the PDB file.
+BasepIsRemovableMedia: Host device is removable, Shim cache deactivated
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imm32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\SophosAV\SOPHOS~1.DLL'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\psapi.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\uxtheme.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmm.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmmbase.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmmbase.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmmbase.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\winmmbase.dll'
+'PA1_Practice.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\winmmbase.dll'
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dinput8.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\XInput1_4.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\devobj.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dwmapi.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msctf.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleaut32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp_win.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\hid.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\setupapi.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wintrust.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msasn1.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\crypt32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winsta.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\System32\DriverStore\FileRepository\nvhdcwi.inf_amd64_c7e0e390e1c35c18\nvoglv32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ole32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\version.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wtsapi32.dll'. Cannot find or open the PDB file.
+'PA1_Practice.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntmarta.dll'. Cannot find or open the PDB file.
+The thread 0x1630 has exited with code 0 (0x0).
+The thread 0x178c has exited with code 0 (0x0).
+The thread 0xf1c has exited with code 0 (0x0).
+'PA1_Practice.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\XInput1_4.dll'
+'PA1_Practice.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\hid.dll'
+'PA1_Practice.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\dinput8.dll'
+'PA1_Practice.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\winmmbase.dll'
+'PA1_Practice.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\winmm.dll'
+The thread 0x1f0c has exited with code -1 (0xffffffff).
+The thread 0x2230 has exited with code -1 (0xffffffff).
+The thread 0x28a0 has exited with code -1 (0xffffffff).
+The thread 0x10f0 has exited with code -1 (0xffffffff).
+The thread 0x4ac has exited with code -1 (0xffffffff).
+The thread 0x2644 has exited with code -1 (0xffffffff).
+The thread 0x1bb8 has exited with code -1 (0xffffffff).
+The thread 0x2fb8 has exited with code -1 (0xffffffff).
+The thread 0x9b8 has exited with code -1 (0xffffffff).
+The program '[9804] PA1_Practice.exe' has exited with code -1 (0xffffffff).
