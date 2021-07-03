@@ -14,9 +14,7 @@
 class FreeMesh {
 
 public:
-	struct Vertex {
-		float x, y, z;
-	};
+
 
 	unsigned int VBO;
 	unsigned int VAO;
@@ -32,18 +30,24 @@ public:
 	void Draw(GLint primitiveType) {
 		glBindVertexArray(VAO);
 		glEnableVertexAttribArray(0);
-		glDrawArrays(primitiveType, 0, numVertices);
+		glDrawArrays(primitiveType, 0, vertices.size());
 		glDisableVertexAttribArray(0);
+		glBindVertexArray(0);
 	}
 
 	void SendToGPU() {
 		glBindVertexArray(VAO);
 		glBindBuffer(GL_ARRAY_BUFFER, VBO);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * numVertices, &vertices, GL_STATIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * vertices.size(), &vertices[0], GL_STATIC_DRAW);
 		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)0);
 		glBindVertexArray(0);
 	}
 
+	void AddArrayOfVertices(Vertex vertexArray[], int size) {
+		for (int i = 0; i < size; i++)
+			vertices.push_back(vertexArray[i]);
+		std::cout << "# of vertices in free mesh: " << vertices.size() << std::endl;
+	}
 private:
 
 

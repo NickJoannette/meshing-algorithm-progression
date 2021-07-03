@@ -70,9 +70,9 @@ public:
 			camera->ProcessKeyboard(BACKWARD, dt);
 
 		if (glfwGetKey(mWind, GLFW_KEY_Q) == GLFW_PRESS)
-			camera->Position.y += 0.2f;
+			camera->Position.y += .5;
 		if (glfwGetKey(mWind, GLFW_KEY_Z) == GLFW_PRESS)
-			camera->Position.y -= 0.2f;
+			camera->Position.y -= .5;
 
 
 		if (glfwGetKey(mWind, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
