@@ -17,7 +17,7 @@ void main()
 	float diff = max(dot(norm, lightDir), 0.0);
 	vec3 diffuse = diff * GLOBAL_LIGHT_COLOR;
 	
-	vec3 result = diffuse * vec3(0.4-0.015*FragPos.y,0.4+0.013*FragPos.y,0.26 + 0.01*FragPos.y);
+	vec3 result = diffuse * vec3(0.3-0.010*FragPos.y,0.4+0.013*FragPos.y,0.26 + 0.028*FragPos.y);
 	FragColor = vec4(result,1.0); 
 };
 

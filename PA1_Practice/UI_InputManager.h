@@ -51,7 +51,7 @@ public:
 		if (camera->Position.y <= 3) spacePressed = false;
 
 		if (glfwGetKey(mWind, GLFW_KEY_SPACE) == GLFW_PRESS) {
-			if (!spacePressed && camera->Position.y <= 3) // prevent jump in the air.
+			//if (!spacePressed && camera->Position.y <= 3) // prevent jump in the air.
 				camera->Acceleration += vec3(0,1,0) * MAX_PLAYER_JUMP_ACCELERATION;
 
 			spacePressed = true;

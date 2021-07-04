@@ -1,12 +1,17 @@
 #pragma once
 
 
+struct Bounds {
+	float minX, maxX, minY, maxY, minZ, maxZ;
+};
 
 struct Voxel {
 	vec3 start;
 	float density;
 	int type;
 	bool culled = false;
+	Bounds bounds;
+	float width = 1, length = 1, height = 1;
 };
 
 
