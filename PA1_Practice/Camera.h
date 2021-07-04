@@ -31,7 +31,7 @@ const float PITCH = -glm::degrees(atanf(10.0f / 30.0f));
 const float SPEED = 4.0f;
 
 const float SENSITIVITY = 1.0;
-const float ZOOM = 90.0f;
+const float ZOOM = 100.0f;
 
 
 class Camera
@@ -41,17 +41,13 @@ public:
 	void applyGravity() {
 
 		Acceleration = -WorldUp * GRAVITATIONAL_ACCELERATION;
+
 	}
 
-	void physicsUpdate(float dt) {
+	void physicsUpdate(float dt, bool collisionBelow) {
 		Velocity += Acceleration;
-		Position += Velocity*dt;
-		if (Position.y > 3)
-			applyGravity();
-		else {
-			Acceleration.y = 0;
-			Velocity.y = 0;
-		}
+		Position += Velocity;
+		
 	}
 
 	OpenGLWindow * mainWindow;
