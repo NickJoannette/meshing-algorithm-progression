@@ -21,6 +21,7 @@ public:
 	bool rightMouseDown = false;
 	bool leftMouseDown = false;
 	bool spacePressed = false;
+	bool shiftPressed = false;
 	glm::vec3 rayDirection;
 
 	// For keeping track of which primitive type is used to render
@@ -48,15 +49,18 @@ public:
 	
 	void processInput(float dt)
 	{
-		if (camera->Position.y <= 3) spacePressed = false;
 
 		if (glfwGetKey(mWind, GLFW_KEY_SPACE) == GLFW_PRESS) {
-			if (!spacePressed && camera->Position.y <= 3) // prevent jump in the air.
-				camera->Acceleration += vec3(0,1,0) * MAX_PLAYER_JUMP_ACCELERATION;
 
 			spacePressed = true;
 		}
 		else spacePressed = false;
+		
+		if (glfwGetKey(mWind, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS) {
+
+			shiftPressed = true;
+		}
+		else shiftPressed = false;
 
 
 		if (glfwGetKey(mWind, GLFW_KEY_A) == GLFW_PRESS)
