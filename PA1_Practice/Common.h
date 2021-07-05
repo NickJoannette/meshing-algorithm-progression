@@ -51,21 +51,19 @@ struct FACE {
  */
 
 
+
 struct GRIDCELL {
 	glm::vec3 p[8];		//position of each corner of the grid in world space
-
 	// For every one of these corners, there are 7 vertex neighbors
 	// The vertex is a different index relative to each of them 
-
-
-
 	float val[8];	//value of the function at this grid corner
-
 	FACE faces[5];
-
 	unsigned int numFaces = 0;
+};
 
-
+struct CELL_CORNER_PAIR {	 // Helps to keep track of vertex neighbors. 
+	GRIDCELL* cell; // Pointer the GRIDCELL object
+	unsigned int corner; // Index of the corner of this GRIDCELL which shares the vertex
 };
 
 
