@@ -175,6 +175,8 @@
     <ClInclude Include="Include\ImGUI\imstb_truetype.h" />
     <ClInclude Include="Include\Meshes\Cube.h" />
     <ClInclude Include="Include\Meshes\FreeMesh.h" />
+    <ClInclude Include="Include\MeshingAlgorithms\MarchingCubes.h" />
+    <ClInclude Include="Include\MeshingAlgorithms\MarchingCubesStanford.h" />
     <ClInclude Include="Include\Noise\FastNoise.h" />
     <ClInclude Include="Line.h" />
     <ClInclude Include="OpenGLWindow.h" />
@@ -192,6 +194,7 @@
     <ClCompile Include="Include\ImGUI\imgui_impl_glfw.cpp" />
     <ClCompile Include="Include\ImGUI\imgui_impl_opengl3.cpp" />
     <ClCompile Include="Include\ImGUI\imgui_widgets.cpp" />
+    <ClCompile Include="Include\MeshingAlgorithms\MarchingCubesStanford.cpp" />
     <ClCompile Include="OpenGLWindow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">

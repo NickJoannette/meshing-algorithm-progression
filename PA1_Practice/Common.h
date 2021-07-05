@@ -6,7 +6,7 @@ struct Bounds {
 };
 
 struct Voxel {
-	vec3 start;
+	glm::vec3 start;
 	float density;
 	int type;
 	bool culled = false;
