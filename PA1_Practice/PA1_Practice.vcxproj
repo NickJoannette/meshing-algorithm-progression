@@ -181,6 +181,7 @@
     <ClInclude Include="Line.h" />
     <ClInclude Include="OpenGLWindow.h" />
     <ClInclude Include="PhysicsCommon.h" />
+    <ClInclude Include="PhysicsRealm.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -197,6 +198,7 @@
     <ClCompile Include="Include\MeshingAlgorithms\MarchingCubesStanford.cpp" />
     <ClCompile Include="OpenGLWindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PhysicsRealm.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

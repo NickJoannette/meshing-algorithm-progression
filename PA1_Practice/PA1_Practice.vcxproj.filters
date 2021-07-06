@@ -84,6 +84,9 @@
     <ClInclude Include="Include\MeshingAlgorithms\MarchingCubesStanford.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PhysicsRealm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGLWindow.cpp">
@@ -115,6 +118,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Include\MeshingAlgorithms\MarchingCubesStanford.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsRealm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,6 +21,7 @@ public:
 	bool rightMouseDown = false;
 	bool leftMouseDown = false;
 	bool spacePressed = false;
+	bool wPressed = false;
 	bool shiftPressed = false;
 	glm::vec3 rayDirection;
 
@@ -68,8 +69,12 @@ public:
 		if (glfwGetKey(mWind, GLFW_KEY_D) == GLFW_PRESS)
 			camera->ProcessKeyboard(RIGHT, dt);
 
-		if (glfwGetKey(mWind, GLFW_KEY_W) == GLFW_PRESS)
+		if (glfwGetKey(mWind, GLFW_KEY_W) == GLFW_PRESS) {
+			wPressed = true;
 			camera->ProcessKeyboard(FORWARD, dt);
+
+		}
+		else wPressed = false;
 		if (glfwGetKey(mWind, GLFW_KEY_S) == GLFW_PRESS)
 			camera->ProcessKeyboard(BACKWARD, dt);
 
