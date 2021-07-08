@@ -63,10 +63,11 @@ public:
 		bool CollidingWithPlane(PlaneCollider* planeCollider) {
 			return (DistanceFromPlane(planeCollider)) <= 2.0f;
 		}
+
 		vec3 Step(float dt, PlaneCollider * pc) {
-			newtonianAttributeSet.Force += newtonianAttributeSet.Mass * vec3(0,-2,0);// Force of gravity
+			newtonianAttributeSet.Force += newtonianAttributeSet.Mass * vec3(0,-2.0,0);// Force of gravity
 			vec3 frictionForce = (-newtonianAttributeSet.Velocity) / dt;
-			newtonianAttributeSet.Force += 0.01f * frictionForce;// Force of friction
+			newtonianAttributeSet.Force += vec3(0.01f * frictionForce.x,0.01f*frictionForce.y,0.01f * frictionForce.z);// Force of friction
 
 			if (newtonianAttributeSet.Position.y <= 2.0f) {
 				vec3 stoppingForce = (-newtonianAttributeSet.Velocity) / dt;

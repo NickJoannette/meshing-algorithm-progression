@@ -48,7 +48,7 @@ public:
 	};
 
 	
-	void processInput(float dt)
+	void processInput()
 	{
 
 		if (glfwGetKey(mWind, GLFW_KEY_SPACE) == GLFW_PRESS) {
@@ -57,54 +57,12 @@ public:
 		}
 		else spacePressed = false;
 		
-		if (glfwGetKey(mWind, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS) {
 
-			shiftPressed = true;
-		}
-		else shiftPressed = false;
-
-
-		if (glfwGetKey(mWind, GLFW_KEY_A) == GLFW_PRESS)
-			camera->ProcessKeyboard(LEFT, dt);
-		if (glfwGetKey(mWind, GLFW_KEY_D) == GLFW_PRESS)
-			camera->ProcessKeyboard(RIGHT, dt);
 
 		if (glfwGetKey(mWind, GLFW_KEY_W) == GLFW_PRESS) {
 			wPressed = true;
-			camera->ProcessKeyboard(FORWARD, dt);
-
 		}
 		else wPressed = false;
-		if (glfwGetKey(mWind, GLFW_KEY_S) == GLFW_PRESS)
-			camera->ProcessKeyboard(BACKWARD, dt);
-
-		if (glfwGetKey(mWind, GLFW_KEY_Q) == GLFW_PRESS)
-			camera->ProcessKeyboard(UP, dt);
-		if (glfwGetKey(mWind, GLFW_KEY_Z) == GLFW_PRESS)
-			camera->ProcessKeyboard(DOWN, dt);
-
-
-
-		if (glfwGetKey(mWind, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
-			camera->MovementSpeed = 6.0f;
-		else camera->MovementSpeed = 4.0f;
-
-		if (glfwGetKey(mWind, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-			glfwSetWindowShouldClose(mWind, true);
-
-		if (glfwGetKey(mWind, GLFW_KEY_LEFT_ALT) == GLFW_PRESS)
-			camera->MovementSpeed -= 0.0025f;
-
-		if (glfwGetKey(mWind, GLFW_KEY_RIGHT_ALT) == GLFW_PRESS)
-			camera->MovementSpeed += 0.0025f;
-		if (glfwGetKey(mWind, GLFW_KEY_0) == GLFW_PRESS)
-
-		{
-			camera->Pitch -= 1.0f;
-			camera->updateView();
-		}
-
-	
 
 
 	};
@@ -185,14 +143,7 @@ private:
 		}                                                                                                                                                                                                                       
 
 
-		if (glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS) {
-			GLint currentPolygonMode[2];
-			glGetIntegerv(GL_POLYGON_MODE, currentPolygonMode);
-			if (currentPolygonMode[0] == GL_FILL)
-				glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-			else
-				glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-		}
+		
 	};
 
 	void mouse_callback(GLFWwindow* window, float xpos, float ypos)
