@@ -64,17 +64,38 @@ public:
 			return (DistanceFromPlane(planeCollider)) <= 2.0f;
 		}
 
-		vec3 Step(float dt, PlaneCollider * pc) {
+		vec3 Step(float dt, PlaneCollider * pc, bool handleCollision, vec3 normal) {
 			newtonianAttributeSet.Force += newtonianAttributeSet.Mass * vec3(0,-2.0,0);// Force of gravity
 			vec3 frictionForce = (-newtonianAttributeSet.Velocity) / dt;
-			newtonianAttributeSet.Force += vec3(0.01f * frictionForce.x,0.01f*frictionForce.y,0.01f * frictionForce.z);// Force of friction
-
+			newtonianAttributeSet.Force += frictionForce*.01f;
 			if (newtonianAttributeSet.Position.y <= 2.0f) {
 				vec3 stoppingForce = (-newtonianAttributeSet.Velocity) / dt;
 				newtonianAttributeSet.Force.y += stoppingForce.y;
 			}
 			newtonianAttributeSet.Velocity += newtonianAttributeSet.Force / newtonianAttributeSet.Mass * dt;
+			
+			if (handleCollision) {
+				float velocityNormalDotProduct = dot(newtonianAttributeSet.Velocity, normal);
+
+				vec3 forceAlongTheSurfaceNormal = -length(newtonianAttributeSet.Velocity) * normal;
+			
+
+				vec3 stoppingForce = (-forceAlongTheSurfaceNormal) / dt;
+
+				// Then we apply it
+				//newtonianAttributeSet.Force += stoppingForce;
+				newtonianAttributeSet.Velocity += stoppingForce / newtonianAttributeSet.Mass * dt;
+
+			}
+			
+
+			
+			
+			
 			newtonianAttributeSet.Position += newtonianAttributeSet.Velocity;
+
+
+
 
 			vec3 preResetForce = newtonianAttributeSet.Force;
 

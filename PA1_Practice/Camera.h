@@ -31,7 +31,7 @@ const float PITCH = -glm::degrees(atanf(10.0f / 30.0f));
 const float SPEED = 4.0f;
 
 const float SENSITIVITY = 1.0;
-const float ZOOM = 100.0f;
+const float ZOOM = 120.0f;
 
 
 class Camera
@@ -96,7 +96,7 @@ public:
 	glm::mat4 * GetProjectionMatrix() { return &projection; }
 
 	void UpdateProjection() {
-		projection = glm::perspective(glm::radians(Zoom), mainWindow->getAspectRatio(), 0.1f, 1000.0f);
+		projection = glm::perspective(glm::radians(Zoom), mainWindow->getAspectRatio(), 0.01f, 1000.0f);
 	}
 
 	// Per-frame keyboard input process function
