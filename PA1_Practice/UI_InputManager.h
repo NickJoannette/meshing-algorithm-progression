@@ -23,6 +23,8 @@ public:
 	bool spacePressed = false;
 	bool wPressed = false;
 	bool shiftPressed = false;
+	bool qPressed = false;
+	bool zPressed = false;
 	glm::vec3 rayDirection;
 
 	// For keeping track of which primitive type is used to render
@@ -63,6 +65,18 @@ public:
 			wPressed = true;
 		}
 		else wPressed = false;
+
+		
+		if (glfwGetKey(mWind, GLFW_KEY_Q) == GLFW_PRESS) {
+			qPressed = true;
+		}
+		else qPressed = false;
+
+		
+		if (glfwGetKey(mWind, GLFW_KEY_Z) == GLFW_PRESS) {
+			zPressed = true;
+		}
+		else zPressed = false;
 
 
 	};

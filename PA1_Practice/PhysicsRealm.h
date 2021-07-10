@@ -64,32 +64,32 @@ public:
 			return (DistanceFromPlane(planeCollider)) <= 2.0f;
 		}
 
+
+		
+
 		vec3 Step(float dt, PlaneCollider * pc, bool handleCollision, vec3 normal) {
-			newtonianAttributeSet.Force += newtonianAttributeSet.Mass * vec3(0,-2.0,0);// Force of gravity
+			newtonianAttributeSet.Force += newtonianAttributeSet.Mass * vec3(0,-.9810,0);// Force of gravity
 			vec3 frictionForce = (-newtonianAttributeSet.Velocity) / dt;
 			newtonianAttributeSet.Force += frictionForce*.01f;
-			if (newtonianAttributeSet.Position.y <= 2.0f) {
-				vec3 stoppingForce = (-newtonianAttributeSet.Velocity) / dt;
-				newtonianAttributeSet.Force.y += stoppingForce.y;
-			}
+			
 			newtonianAttributeSet.Velocity += newtonianAttributeSet.Force / newtonianAttributeSet.Mass * dt;
 			
 			if (handleCollision) {
+				// Collision rebounds can never cause increase in velocity
+
 				float velocityNormalDotProduct = dot(newtonianAttributeSet.Velocity, normal);
 
 				vec3 forceAlongTheSurfaceNormal = -length(newtonianAttributeSet.Velocity) * normal;
-			
-
 				vec3 stoppingForce = (-forceAlongTheSurfaceNormal) / dt;
-
+				float preVol = length(newtonianAttributeSet.Velocity);
 				// Then we apply it
-				//newtonianAttributeSet.Force += stoppingForce;
 				newtonianAttributeSet.Velocity += stoppingForce / newtonianAttributeSet.Mass * dt;
+				if (length(newtonianAttributeSet.Velocity) > preVol) newtonianAttributeSet.Velocity = normalize(newtonianAttributeSet.Velocity) * preVol;
+
 
 			}
 			
 
-			
 			
 			
 			newtonianAttributeSet.Position += newtonianAttributeSet.Velocity;

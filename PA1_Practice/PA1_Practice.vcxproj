@@ -165,6 +165,7 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="EditablePlane.h" />
+    <ClInclude Include="Include\Meshes\Icosphere.h" />
     <ClInclude Include="Include\ImGUI\imconfig.h" />
     <ClInclude Include="Include\ImGUI\imgui.h" />
     <ClInclude Include="Include\ImGUI\imgui_impl_glfw.h" />
@@ -175,20 +176,22 @@
     <ClInclude Include="Include\ImGUI\imstb_truetype.h" />
     <ClInclude Include="Include\Meshes\Cube.h" />
     <ClInclude Include="Include\Meshes\FreeMesh.h" />
+    <ClInclude Include="Include\Meshes\Line.h" />
     <ClInclude Include="Include\MeshingAlgorithms\MarchingCubes.h" />
     <ClInclude Include="Include\MeshingAlgorithms\MarchingCubesStanford.h" />
     <ClInclude Include="Include\Noise\FastNoise.h" />
-    <ClInclude Include="Line.h" />
     <ClInclude Include="OpenGLWindow.h" />
     <ClInclude Include="PhysicsCommon.h" />
     <ClInclude Include="PhysicsRealm.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="Include\Meshes\Sphere.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="UI_InputManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EditablePlane.cpp" />
+    <ClCompile Include="Include\Meshes\Icosphere.cpp" />
     <ClCompile Include="Include\ImGUI\imgui.cpp" />
     <ClCompile Include="Include\ImGUI\imgui_demo.cpp" />
     <ClCompile Include="Include\ImGUI\imgui_draw.cpp" />
@@ -199,6 +202,7 @@
     <ClCompile Include="OpenGLWindow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PhysicsRealm.cpp" />
+    <ClCompile Include="Include\Meshes\Sphere.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

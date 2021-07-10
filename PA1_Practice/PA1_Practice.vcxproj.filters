@@ -21,9 +21,6 @@
     <ClInclude Include="UI_InputManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Line.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="OpenGLWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -87,6 +84,15 @@
     <ClInclude Include="PhysicsRealm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Meshes\Line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Meshes\Sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Meshes\Icosphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGLWindow.cpp">
@@ -121,6 +127,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PhysicsRealm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Meshes\Sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Include\Meshes\Icosphere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
