@@ -21,9 +21,9 @@ void main()
 	float distance    = length(GLOBAL_LIGHT_POSITION - FragPos);
 	float attenuation = 1.0 / (0.12 + 0.032 * distance +  0.007 * (distance * distance));    
   //  diffuse *= attenuation;
-	vec3 diffuseColor = vec3(0.02*FragPos.y +.68 - (FragPos.y - 5) * 0.02, 0.03*FragPos.y, 0.05*FragPos.z);
+	vec3 diffuseColor = vec3(0.02*FragPos.y +.08 - (FragPos.y - 15) * 0.02, 0.03*FragPos.y, 0.05*FragPos.z);
 
-vec3 ambient = vec3(0.25*diffuseColor);
+vec3 ambient = vec3(0.15*diffuseColor);
 	vec3 result = ambient + diffuse * diffuseColor;
 
 if (FragPos == Test1) result = vec3(1.0,0,0);

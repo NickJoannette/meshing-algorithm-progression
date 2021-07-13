@@ -53,12 +53,6 @@ public:
 	void processInput()
 	{
 
-		if (glfwGetKey(mWind, GLFW_KEY_SPACE) == GLFW_PRESS) {
-
-			spacePressed = true;
-		}
-		else spacePressed = false;
-		
 
 
 		if (glfwGetKey(mWind, GLFW_KEY_W) == GLFW_PRESS) {
@@ -121,7 +115,13 @@ private:
 
 	void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 	{
-	
+		if (glfwGetKey(mWind, GLFW_KEY_SPACE) == GLFW_PRESS) {
+
+			spacePressed = true;
+		}
+		//else spacePressed = false;
+
+
 		if (glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS)
 		{
 			glm::vec3 f = camera->Front;

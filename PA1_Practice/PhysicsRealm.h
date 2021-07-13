@@ -4,8 +4,11 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/transform.hpp>
 #include<glm/gtx/string_cast.hpp>
+#include <iostream>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include "PhysicsCommon.h"
+
 using namespace glm;
 static class PhysicsRealm
 {
@@ -67,39 +70,34 @@ public:
 
 		
 
-		vec3 Step(float dt, PlaneCollider * pc, bool handleCollision, vec3 normal) {
-			newtonianAttributeSet.Force += newtonianAttributeSet.Mass * vec3(0,-.9810,0);// Force of gravity
-			vec3 frictionForce = (-newtonianAttributeSet.Velocity) / dt;
-			newtonianAttributeSet.Force += frictionForce*.01f;
-			
-			newtonianAttributeSet.Velocity += newtonianAttributeSet.Force / newtonianAttributeSet.Mass * dt;
-			
-			if (handleCollision) {
-				// Collision rebounds can never cause increase in velocity
+		vec3 Force_Integration_Step(float dt) {
 
-				float velocityNormalDotProduct = dot(newtonianAttributeSet.Velocity, normal);
-
-				vec3 forceAlongTheSurfaceNormal = -length(newtonianAttributeSet.Velocity) * normal;
-				vec3 stoppingForce = (-forceAlongTheSurfaceNormal) / dt;
-				float preVol = length(newtonianAttributeSet.Velocity);
-				// Then we apply it
-				newtonianAttributeSet.Velocity += stoppingForce / newtonianAttributeSet.Mass * dt;
-				if (length(newtonianAttributeSet.Velocity) > preVol) newtonianAttributeSet.Velocity = normalize(newtonianAttributeSet.Velocity) * preVol;
+			// Apply unavoidable forces here.
+			newtonianAttributeSet.Force += newtonianAttributeSet.Mass * vec3(0, - FORCE_OF_GRAVITY, 0);// Force of gravity
+			// Forces due to collision resolution should probably be solved here .
 
 
-			}
-			
 
-			
-			
+			// INCREMENT POSITION BY VELOCITY X DT
 			newtonianAttributeSet.Position += newtonianAttributeSet.Velocity;
 
 
+			// Calculate acceleration due to net forces
+			vec3 acceleration(0.0f);
 
+			// F = ma; a = F/m
+			acceleration = newtonianAttributeSet.Force / newtonianAttributeSet.Mass;
+
+			// Update velocity due to acceleration;
+			newtonianAttributeSet.Velocity += acceleration * dt;
+
+			// Impose drag or other relevant 'after-effect' forces
+			newtonianAttributeSet.Velocity *= (1.0f - AIR_DRAG); // -0.5% reduction due to drag.
+		
+			// Reset net force?
+			newtonianAttributeSet.Force = vec3(0); // Reset net force
 
 			vec3 preResetForce = newtonianAttributeSet.Force;
-
-			newtonianAttributeSet.Force = vec3(0); // Reset net force
 			return preResetForce;
 		}
 	};
